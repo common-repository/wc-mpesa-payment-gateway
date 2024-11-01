@@ -1,0 +1,169 @@
+::placeholder {
+    color: rgba(10, 10, 10, 0.7) !important;
+}
+:-ms-input-placeholder {
+    color: rgba(10, 10, 10, 0.7) !important;
+}
+::-ms-input-placeholder {
+    color: rgba(10, 10, 10, 0.7) !important;
+}
+*:focus {
+    outline: none;
+}
+
+.mpesa-content {
+    position: absolute !important;
+    width: 25px !important;
+    height: 25px !important;
+    left: 5px !important;
+    top: 2px !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #pgfmow-phonenumber_input {
+        background: transparent;
+        width: 190px;
+        height: 46px;
+        left: 15px;
+        top: 0px;
+        position: absolute;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        horizontal-align: middle;
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: bolder;
+        padding: 3px;
+        font-size: 16px;
+        color: rgba(10, 10, 10, 0.7);
+        border: 0;
+    }
+    #pgfmow-phonenumber-dp {
+        background: #fff;
+        width: 252px;
+        height: 48px;
+        left: -0.001px;
+        top: 26.998px;
+        position: absolute;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        text-indent: 15px;
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 14px;
+        color: rgba(10, 10, 10, 0.7);
+        border-radius: 6px;
+        border: solid 1px rgb(232 149 21 / 70%);
+    }
+   
+}
+@media (min-device-width: 768px) {
+    #pgfmow-phonenumber_input {
+        background: transparent;
+        width: 290px;
+        height: 46px;
+        left: 15;
+        top: 0px;
+        position: absolute;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        vertical-align: middle;
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: bolder;
+        padding-left: 7px;
+        font-size: 16px;
+        color: rgba(10, 10, 10, 0.7);
+        border: 0;
+    }
+    #pgfmow-phonenumber-dp {
+        background: #fff;
+        width: 342px;
+        height: 48px;
+        left: -0.001px;
+        top: 26.998px;
+        position: absolute;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: left;
+        text-indent: 15px;
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 14px;
+        color: rgba(10, 10, 10, 0.7);
+        border-radius: 6px;
+        box-shadow: 0 0 0 0px #000;
+        border: solid 1px rgb(232 149 21 / 70%);
+    }
+
+   
+}
+
+.payment-title {
+    width: 100%;
+    text-align: center;
+}
+.pgfmow-form-container .pgfmow-field-container:first-of-type {
+    grid-area: name;
+}
+.pgfmow-form-container .pgfmow-field-container:nth-of-type(2) {
+    grid-area: number;
+}
+.pgfmow-form-container .pgfmow-field-container:nth-of-type(3) {
+    grid-area: expiration;
+}
+.pgfmow-form-container .pgfmow-field-container:nth-of-type(4) {
+    grid-area: security;
+}
+.pgfmow-field-container input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pgfmow-field-container {
+    position: relative;
+}
+.pgfmow-form-container {
+    display: grid !important;
+    grid-column-gap: 5px !important;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: 90px 90px 90px !important;
+    grid-template-areas: "name name" "number number" "expiration security" !important;
+    max-width: 420px !important;
+    padding: 0.5px !important;
+    color: #707070;
+}
+label {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+input {
+    margin-top: 3px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+.ccicon {
+    height: 38px;
+    position: absolute;
+    right: 6px;
+    top: calc(50% - 17px);
+    width: 60px;
+}
+.center-mine {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--text-input-color) !important;
+    -webkit-box-shadow: 0 0 0 1rem var(--page-background-color) inset !important;
+    background-clip: content-box !important;
+}
